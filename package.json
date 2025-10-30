@@ -1,0 +1,19 @@
+{
+  "name": "cypress_demoblaze",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "jsaleem",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "allure:serve": "npx allure generate allure-results --clean && npx allure open",
+    "allure:report": "npx allure generate allure-results --clean"
+  },
+  "devDependencies": {
+    "allure-cypress": "^3.4.1",
+    "cypress": "^15.4.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
