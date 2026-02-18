@@ -61,6 +61,4 @@ Include test steps, status, and screenshots
 ## Contact
 
 Maintainer: Jafar
-
 Email: jafarshathiks1@gmail.com
-
