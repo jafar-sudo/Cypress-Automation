@@ -62,4 +62,5 @@ Include test steps, status, and screenshots
 
 Maintainer: Jafar
 
-Email: jsaleem@paktolus.com
+Email: jafarshathiks1@gmail.com
+
