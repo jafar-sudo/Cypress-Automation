@@ -4,7 +4,7 @@
 This project contains automated tests for the **Demoblaze website** using **Cypress**.  
 It follows the **Page Object Model (POM)** structure to ensure **reusability, maintainability, and scalability**.
 
-## Test-Driven Development (TDD) 
+## Test-Driven Development (TDD)
 
 This project follows TDD practices:
 
@@ -29,10 +29,15 @@ README.md → Project documentation
 ## Setup Instructions
 
 1. Clone repository: git clone <repo-url>
-2. Install dependencies: npm install
-3. Open Cypress GUI: npx cypress open
-4. Run all tests headless: npx cypress run
-5. Run a specific test: npx cypress run --spec "cypress/e2e/signupTest.cy.js"
+2. Make sure Node & Java is installed. Also their paths added to env variables.
+3. Install dependencies: npm install cypress --save-dev
+4. Add .env file to root directory.
+5. Open Cypress GUI: npx cypress open
+6. Run all tests headless: npx cypress run
+7. Run a specific test: npx cypress run --spec "cypress/e2e/signupTest.cy.js"
+8. Install Allure reporting plugin: npm install --save-dev @shelex/cypress-allure-plugin allure-commandline
+9. Run Allure (After running tests in headless only): allure generate allure-results --clean -o allure-report
+10. Open Allure report: allure open allure-report
 
 ## Page Object Model (POM)
 
@@ -55,6 +60,5 @@ Include test steps, status, and screenshots
 
 ## Contact
 
-Maintainer: Jafar
-
-Email: jsaleem@paktolus.com
+Maintainer: Dipesh,Jafar
+Email: dpadelkar@paktolus.com / jsaleem@paktolus.com

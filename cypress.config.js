@@ -1,16 +1,21 @@
 const { defineConfig } = require("cypress");
- 
+const allureWriter = require("@shelex/cypress-allure-plugin/writer");
+
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://www.demoblaze.com/',
-    video: true,                   // enable/disable video recording
-    screenshotOnRunFailure: true,  // capture screenshot on failure
+    experimentalPromptCommand: true,
+    video: true,
+    screenshotOnRunFailure: true,
+    env: {
+      allure: true
+    },
+
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      allureWriter(on, config);
+      return config;
     },
   },
 });
- 
 
 
 
