@@ -60,5 +60,6 @@ Include test steps, status, and screenshots
 
 ## Contact
 
-Maintainer: Dipesh,Jafar
-Email: dpadelkar@paktolus.com / jsaleem@paktolus.com
+Maintainer: Jafar
+
+Email: jsaleem@paktolus.com
